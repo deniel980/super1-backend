@@ -75,7 +75,7 @@ u'https://countries-super-1.vercel.app',
 u'http://localhost:8000',
 )
 CORS_ALLOWED_ORIGINS = [
-    "https://countries-super-1.vercel.app",
+    u"https://countries-super-1.vercel.app",
 ]
 CORS_ALLOW_HEADERS = (
     "accept",
