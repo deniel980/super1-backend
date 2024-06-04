@@ -69,11 +69,18 @@ MIDDLEWARE = [
 CORS_ORIGIN_ALLOW_ALL = True
 CORS_ALLOW_ALL_ORIGINS = True
 CORS_ORIGIN_WHITELIST = (
-u'https://countries-super-1.vercel.app',
-u'http://localhost:8000',
+    u'https://countries-super-1.vercel.app',
+    u'http://localhost:8000',
+    'https://countries-super-1.vercel.app',
+    "http://localhost:5173",
+     u"http://localhost:5173"
+
 )
 CORS_ALLOWED_ORIGINS = (
     u"https://countries-super-1.vercel.app",
+    "https://countries-super-1.vercel.app",
+    u"http://localhost:5173",
+    "http://localhost:5173",
 )
 
 CORS_ALLOW_HEADERS = (
