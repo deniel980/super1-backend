@@ -65,9 +65,7 @@ MIDDLEWARE = [
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
-CORS_ALLOWED_ORIGIN_REGEXES = [
-    r"^https://\w+\.example\.com$",
-]
+
 CORS_ORIGIN_ALLOW_ALL = True
 CORS_ALLOW_ALL_ORIGINS = True
 CORS_ORIGIN_WHITELIST = (
@@ -77,6 +75,7 @@ u'http://localhost:8000',
 CORS_ALLOWED_ORIGINS = (
     u"https://countries-super-1.vercel.app",
 )
+
 CORS_ALLOW_HEADERS = (
     "accept",
     "authorization",
