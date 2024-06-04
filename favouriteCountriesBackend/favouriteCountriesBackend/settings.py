@@ -74,9 +74,9 @@ CORS_ORIGIN_WHITELIST = (
 u'https://countries-super-1.vercel.app',
 u'http://localhost:8000',
 )
-CORS_ALLOWED_ORIGINS = [
+CORS_ALLOWED_ORIGINS = (
     u"https://countries-super-1.vercel.app",
-]
+)
 CORS_ALLOW_HEADERS = (
     "accept",
     "authorization",
