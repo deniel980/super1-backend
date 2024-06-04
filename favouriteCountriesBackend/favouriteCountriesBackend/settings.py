@@ -56,10 +56,8 @@ SWAGGER_SETTINGS = {
 MIDDLEWARE = [
     'corsheaders.middleware.CorsMiddleware',
     'django.middleware.common.CommonMiddleware',
-    'django.middleware.common.CommonMiddleware',
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
-    'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
@@ -68,37 +66,46 @@ MIDDLEWARE = [
 
 CORS_ORIGIN_ALLOW_ALL = True
 CORS_ALLOW_ALL_ORIGINS = True
-CORS_ORIGIN_WHITELIST = (
-    u'https://countries-super-1.vercel.app',
-    u'http://localhost:8000',
-    'https://countries-super-1.vercel.app',
-    "http://localhost:5173",
-     u"http://localhost:5173"
 
-)
-CORS_ALLOWED_ORIGINS = (
-    u"https://countries-super-1.vercel.app",
-    "https://countries-super-1.vercel.app",
-    u"http://localhost:5173",
-    "http://localhost:5173",
-)
+# CORS_ORIGIN_WHITELIST = (
+#     u'https://countries-super-1.vercel.app',
+#     u'http://localhost:8000',
+#     'https://countries-super-1.vercel.app',
+#     "http://localhost:5173",
+#      u"http://localhost:5173"
 
-CORS_ALLOW_HEADERS = (
-    "accept",
-    "authorization",
-    "content-type",
-    "user-agent",
-    "x-csrftoken",
-    "x-requested-with",
-)
-CORS_ALLOW_METHODS = (
+# )
+# CORS_ALLOWED_ORIGINS = (
+#     u"https://countries-super-1.vercel.app",
+#     "https://countries-super-1.vercel.app",
+#     u"http://localhost:5173",
+#     "http://localhost:5173",
+# )
+
+CORS_ALLOWED_ORIGINS = [
+    "http://localhost:5173",  # Assuming your front end is served from this URL
+]
+
+CORS_ALLOW_METHODS = [
     "DELETE",
     "GET",
     "OPTIONS",
     "PATCH",
     "POST",
     "PUT",
-)
+]
+
+CORS_ALLOW_HEADERS = [
+    "accept",
+    "accept-encoding",
+    "authorization",
+    "content-type",
+    "dnt",
+    "origin",
+    "user-agent",
+    "x-csrftoken",
+    "x-requested-with",
+]
 
 ROOT_URLCONF = 'favouriteCountriesBackend.urls'
 
