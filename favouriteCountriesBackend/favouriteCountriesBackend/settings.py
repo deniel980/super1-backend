@@ -67,6 +67,11 @@ MIDDLEWARE = [
 ]
 
 CORS_ORIGIN_ALLOW_ALL = True
+CORS_ORIGIN_WHITELIST = (
+'https://countries-super-1.vercel.app/my-countries',
+'https://countries-super-1.vercel.app',
+'http://localhost:8000',
+)
 
 ROOT_URLCONF = 'favouriteCountriesBackend.urls'
 
