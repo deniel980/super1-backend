@@ -94,10 +94,10 @@ WSGI_APPLICATION = 'favouriteCountriesBackend.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'countries',
-        'USER': 'postgres',
-        'PASSWORD': '7753191',
-        'HOST': '127.0.0.1',
+        'NAME': 'postgres',
+        'USER': 'baeldung',
+        'PASSWORD': 'baeldung',
+        'HOST': '159.69.242.178',
         'PORT': '5432',
     }
 }
