@@ -1,0 +1,7 @@
+psycopg2-binary
+django
+djangorestframework
+drf-yasg
+setuptools
+djoser
+django-cors-headers
