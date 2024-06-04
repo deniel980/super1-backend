@@ -22,7 +22,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-l-y5ubaasp9cu&p49ju)armc5)4^syo!)b+2ik4ijz$5p^y$34'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = []
 
@@ -69,12 +69,10 @@ MIDDLEWARE = [
 CORS_ORIGIN_ALLOW_ALL = True
 CORS_ALLOW_ALL_ORIGINS = True
 CORS_ORIGIN_WHITELIST = (
-'https://countries-super-1.vercel.app/my-countries',
 'https://countries-super-1.vercel.app',
 'http://localhost:8000',
 )
 CORS_ALLOWED_ORIGINS = [
-    "https://countries-super-1.vercel.app/my-countries",
     "https://countries-super-1.vercel.app",
 ]
 CORS_ALLOW_HEADERS = (
