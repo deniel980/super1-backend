@@ -30,17 +30,18 @@ class FavouriteCountryListCreateView(generics.ListCreateAPIView):
     def get_queryset(self):
         queryset = FavouriteCountry.objects.all()
 
-        username = self.request.query_params.get('username')
-        if username:
-            users = Users.objects.all()
-            user_id = users.filter(username=username)[0]
+        user_id = self.request.query_params.get('user_id')
+        if user_id:
             queryset = queryset.filter(user_id=user_id)
-        
+
         country = self.request.query_params.get('country_id')
         if country:
             queryset = queryset.filter(country_id=country)
 
         return queryset
+
+    
+    
 
 
 class FavouriteCountryDetailView(generics.RetrieveUpdateDestroyAPIView):
