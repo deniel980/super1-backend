@@ -83,7 +83,8 @@ CORS_ALLOW_ALL_ORIGINS = True
 # )
 
 CORS_ALLOWED_ORIGINS = [
-    "http://localhost:5173",  # Assuming your front end is served from this URL
+    "http://localhost:5173",
+    'https://countries-super-1.vercel.app',  # Assuming your front end is served from this URL
 ]
 
 CORS_ALLOW_METHODS = [
