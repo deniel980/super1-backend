@@ -1,14 +1,10 @@
 {
-  "builds": [
-    {
-      "src": "favouriteCountriesBackend/wsgi.py",
-      "use": "@vercel/python"
-    }
-  ],
-  "routes": [
-    {
-      "src": "/(.*)",
-      "dest": "favouriteCountriesBackend/wsgi.py"
-    }
-  ]
+  "builds": [{
+     "src": "vercel_app/wsgi.py",
+     "use": "@ardnt/vercel-python-wsgi"
+  }],
+  "routes": [{
+     "src": "/(.*)",
+     "dest": "vercel_app/wsgi.py"
+  }]
 }
